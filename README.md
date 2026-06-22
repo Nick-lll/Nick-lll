@@ -34,6 +34,14 @@ ZEUS/
 
 ---
 
+## 🎬 Demo — 60s Architecture Walkthrough
+
+[![ZEUS Demo](zeus_thumb_800.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_demo_1080p.mp4)
+
+*Click the thumbnail to watch. 60 seconds — Generation → Execution → Governance.*
+
+---
+
 ## 🧩 What makes ZEUS different
 
 Most AI systems generate outputs.
