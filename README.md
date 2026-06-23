@@ -76,11 +76,11 @@ flowchart TD
 
 ---
 
-## Demo — 60s Architecture Walkthrough
+## Demo — Real System Generation (Terminal Recording)
 
-[![ZEUS Demo](zeus_thumb_800.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_demo_1080p.mp4)
+[![ZEUS Live Demo](zeus_terminal_thumb_800.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_terminal_demo_1080p.mp4)
 
-*Click to watch. 60 seconds — Generation → Execution → Governance (ARES).*
+*34s terminal recording. One sentence in → 28 files, REST API, Admin Panel. No animation — real code running.*
 
 ---
 
