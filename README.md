@@ -78,7 +78,7 @@ flowchart TD
 
 ## Demo — Real System Generation (Terminal Recording)
 
-[![ZEUS Live Demo](zeus_terminal_thumb_800.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_terminal_demo_1080p.mp4)
+[![ZEUS Live Demo](zeus_one_sentence_thumb.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_one_sentence_to_system.mp4)
 
 *34s terminal recording. One sentence in → 28 files, REST API, Admin Panel. No animation — real code running.*
 
