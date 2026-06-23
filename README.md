@@ -84,7 +84,13 @@ flowchart TD
 
 *34s terminal recording. One sentence in — 28 files, REST API, Admin Panel. Real code running.*
 
-### Architecture Walkthrough (ZEUS Framework)
+### System Live Runtime (6 Engines)
+
+[![ZEUS System Live](zeus_system_thumb.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_system_demo.mp4)
+
+*41s terminal recording. 177/177 modules, 6 engines operational, ARES audit. Real ZEUS running.*
+
+### Architecture Walkthrough (3-Layer Design)
 
 [![ZEUS Architecture](zeus_thumb_800.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_demo_1080p.mp4)
 
