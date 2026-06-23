@@ -1,85 +1,108 @@
-# 👋 Hi, I'm Yuxue Chen
+# Hi, I'm Yuxue Chen
 
 **AI Systems Architect | Autonomous System Generation & Governance**
 
-I build systems that generate, execute, and govern other systems.
-
-Not chatbots. Not single-purpose automation bots.
-But autonomous software ecosystems.
+I build systems that generate, execute, and govern other systems — not chatbots, but autonomous software ecosystems.
 
 ---
 
-## 🔷 ZEUS — Autonomous Systems Framework
+## Evidence: ZEUS Framework
 
-ZEUS is a multi-engine framework for:
+| Metric | Value |
+|--------|-------|
+| Python modules | **1,389** |
+| Total LOC | **387,413** |
+| Tests | **9,094** collected |
+| Commits | **310** |
+| Build iterations | **360+** |
 
-- System Generation (AI builds software systems)
-- System Execution (systems run autonomously)
-- System Governance (systems verify and control themselves)
-- System Evolution (systems improve over time)
+### Runnable Output — CodeGen Engine
+
+ZEUS generates complete runnable applications from one-sentence requirements:
+
+| Generated Project | Modules | REST Endpoints |
+|-------------------|---------|---------------|
+| customer_support | 4 (Tickets/Email/WeChat/Notifications) | 19 |
+| restaurant_ordering | 3 (Menu/Tables/Kitchen) | 15 |
+
+Each includes: database schema → business logic → REST API → HTMX admin panel. Fully runnable.
+
+### ARES Governance — Audit Baseline
+
+| Check | Result |
+|-------|--------|
+| SilenceScanner | 0 dead / 156 standalone / 0 island |
+| Contract Verifier | **100%** (80/80 verified) |
+| Health Score | **100 / 100** |
+| Debt Tracker | 0 items |
 
 ---
 
-### 🧠 Core Architecture
+## Architecture
 
+```mermaid
+flowchart TD
+    INPUT["Natural Language / Intent"] --> GEN
+
+    subgraph GEN["1. System Generation Layer"]
+        DECOMPOSE["Intent Decomposition"]
+        SYNTHESIS["Architecture Synthesis"]
+        CODEGEN["Code + System Skeleton"]
+        DECOMPOSE --> SYNTHESIS --> CODEGEN
+    end
+
+    GEN --> EXEC
+
+    subgraph EXEC["2. System Execution Layer"]
+        HERMES["HERMES — Runtime & Coordination"]
+        ATHENA["ATHENA — Intelligence & Optimization"]
+        APOLLO["APOLLO — Evolution & Strategy"]
+    end
+
+    EXEC --> ARES
+
+    subgraph ARES["3. Governance Layer — ARES"]
+        L1["L1 Dead Code Detection"]
+        L2["L2 API Contract Verification"]
+        L3["L3 Dependency Graph Analysis"]
+        L4["L4 CI Enforcement Gates"]
+        L5["L5 Lifecycle Management"]
+        L6["L6 Digital Twin Simulation"]
+        L1 --> L2 --> L3 --> L4 --> L5 --> L6
+    end
+
+    ARES --> LOOP["Evolution Loop: Execute → Feedback → Improve → Rebuild"]
 ```
-ZEUS/
-├── ATHENA   → Intelligence & Optimization Engine
-├── HERMES   → Execution & Runtime Engine
-├── APOLLO   → Evolution & Strategy Engine
-├── AEGIS    → Security & Risk Engine
-├── HADES    → Infrastructure & Orchestration
-└── ARES     → Governance & Verification Layer
-```
 
 ---
 
-## 🎬 Demo — 60s Architecture Walkthrough
+## Demo — 60s Architecture Walkthrough
 
 [![ZEUS Demo](zeus_thumb_800.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_demo_1080p.mp4)
 
-*Click the thumbnail to watch. 60 seconds — Generation → Execution → Governance.*
+*Click to watch. 60 seconds — Generation → Execution → Governance (ARES).*
 
 ---
 
-## 🧩 What makes ZEUS different
+## Open Source Components
 
-Most AI systems generate outputs.
+- **[dead-scanner](https://github.com/Nick-lll/dead-scanner)** — Python module classifier (dead / fake-alive / standalone / island). Zero dependencies. `pip install dead-scanner`
+- **[contract-verifier](https://github.com/Nick-lll/contract-verifier)** — Bidirectional AST-to-contract compliance checker. Zero dependencies. `pip install contract-verifier`
 
-ZEUS generates systems.
-
-Then governs them through a layered control architecture (ARES).
-
----
-
-## 🛡️ ARES — Governance Layer
-
-ARES ensures system reliability through:
-
-- Code lifecycle validation
-- Contract consistency checks
-- Dependency graph analysis
-- CI enforcement
-- System evolution simulation
+Both extracted from ZEUS ARES Engine. Runnable, documented, on PyPI.
 
 ---
 
-## 📦 Open Source Components
+## What makes ZEUS different
 
-- dead-scanner → structural code analysis tool
-- contract-verifier → bidirectional API contract validation
+Most AI systems generate outputs. ZEUS generates **entire systems** — then governs them through a layered control architecture.
 
----
-
-## 🧠 Philosophy
-
-I don't build applications.
-
-I design systems that generate applications.
+The shift: from *"AI as a tool"* to *"AI as a system creator and controller."*
 
 ---
 
-## 📫 Contact
+## Contact
 
 - Email: nickchen791@gmail.com
 - GitHub: [github.com/Nick-lll](https://github.com/Nick-lll)
+- X: [@Nicksenlin](https://x.com/Nicksenlin)
