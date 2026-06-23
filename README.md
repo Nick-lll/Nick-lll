@@ -1,44 +1,21 @@
-# Hi, I'm Yuxue Chen
+# ZEUS — A System Compiler for Autonomous Agents
 
-**AI Systems Architect | Autonomous System Generation & Governance**
+> ZEUS generates, executes, and governs multi-agent software systems.
+> It turns LLMs from conversational models into controllable system-level executors.
+>
+> Not a chatbot framework. A system compiler.
 
-I build systems that generate, execute, and govern other systems — not chatbots, but autonomous software ecosystems.
-
----
-
-## Evidence: ZEUS Framework
-
-| Metric | Value |
-|--------|-------|
-| Python modules | **1,389** |
-| Total LOC | **387,413** |
-| Tests | **9,094** collected |
-| Commits | **310** |
-| Build iterations | **360+** |
-
-### Runnable Output — CodeGen Engine
-
-ZEUS generates complete runnable applications from one-sentence requirements:
-
-| Generated Project | Modules | REST Endpoints |
-|-------------------|---------|---------------|
-| customer_support | 4 (Tickets/Email/WeChat/Notifications) | 19 |
-| restaurant_ordering | 3 (Menu/Tables/Kitchen) | 15 |
-
-Each includes: database schema → business logic → REST API → HTMX admin panel. Fully runnable.
-
-### ARES Governance — Audit Baseline
-
-| Check | Result |
-|-------|--------|
-| SilenceScanner | 0 dead / 156 standalone / 0 island |
-| Contract Verifier | **100%** (80/80 verified) |
-| Health Score | **100 / 100** |
-| Debt Tracker | 0 items |
+[Full Executive Summary →](EXECUTIVE_SUMMARY.md)
 
 ---
 
-## Architecture
+## The Problem
+
+AI agents today are uncontrollable, non-deterministic, and lack lifecycle governance. We build them as **behaviors**, not as **systems**. When they break, we don't know why. When they rot, we don't notice.
+
+## The Approach
+
+Three layers, one system:
 
 ```mermaid
 flowchart TD
@@ -76,40 +53,77 @@ flowchart TD
 
 ---
 
-## Demos
+## Evidence — Runnable, Verifiable
 
-### One Sentence → System (CodeGen Engine)
+### 1. One Sentence → Running System
+
+One sentence in. 28 files, database schema, REST API, HTMX admin panel out. Real code, real runtime.
 
 [![One Sentence Demo](zeus_one_sentence_thumb.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_one_sentence_to_system.mp4)
 
-*34s terminal recording. One sentence in — 28 files, REST API, Admin Panel. Real code running.*
+*34s — One sentence to 28 files, REST API + Admin Panel.*
 
-### System Live Runtime (6 Engines)
+### 2. Full System Runtime
+
+177/177 modules operational across 6 engines. ARES audit running live. Not a mockup.
 
 [![ZEUS System Live](zeus_system_thumb.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_system_demo.mp4)
 
-*41s terminal recording. 177/177 modules, 6 engines operational, ARES audit. Real ZEUS running.*
+*41s — 6 engines operational, ARES audit, real ZEUS running.*
 
-### Architecture Walkthrough (3-Layer Design)
+### 3. Architecture Walkthrough
+
+The 3-layer design: Generation → Execution → Governance. How the layers connect and why.
 
 [![ZEUS Architecture](zeus_thumb_800.png)](https://github.com/Nick-lll/Nick-lll/blob/main/zeus_demo_1080p.mp4)
 
-*60s — 3-layer architecture: System Generation → System Execution → System Governance (ARES).*
+*60s — 3-layer architecture walkthrough.*
+
+---
+
+## Generated Systems (Runnable)
+
+ZEUS generates complete applications. Each includes: database schema → business logic → REST API → HTMX admin panel.
+
+| Generated Project | Modules | REST Endpoints |
+|-------------------|---------|---------------|
+| [customer_support](https://github.com/Nick-lll/customer_support) | 4 (Tickets/Email/WeChat/Notifications) | 19 |
+| [restaurant_ordering](https://github.com/Nick-lll/restaurant_ordering) | 3 (Menu/Tables/Kitchen) | 15 |
 
 ---
 
 ## Open Source Components
 
-- **[dead-scanner](https://github.com/Nick-lll/dead-scanner)** — Python module classifier (dead / fake-alive / standalone / island). Zero dependencies. `pip install dead-scanner`
-- **[contract-verifier](https://github.com/Nick-lll/contract-verifier)** — Bidirectional AST-to-contract compliance checker. Zero dependencies. `pip install contract-verifier`
+Extracted from ZEUS ARES Engine. Zero dependencies, on PyPI, documented.
 
-Both extracted from ZEUS ARES Engine. Runnable, documented, on PyPI.
+- **[dead-scanner](https://github.com/Nick-lll/dead-scanner)** — Python module classifier (dead / standalone / island). `pip install dead-scanner`
+- **[contract-verifier](https://github.com/Nick-lll/contract-verifier)** — AST-to-contract bidirectional compliance checker. `pip install contract-verifier`
 
 ---
 
-## What makes ZEUS different
+## ARES Governance — Audit Baseline
 
-Most AI systems generate outputs. ZEUS generates **entire systems** — then governs them through a layered control architecture.
+| Check | Result |
+|-------|--------|
+| SilenceScanner | 0 dead / 156 standalone / 0 island |
+| Contract Verifier | **100%** (80/80 verified) |
+| Health Score | **100 / 100** |
+| Debt Tracker | 0 items |
+
+---
+
+## What Makes ZEUS Different
+
+Current agent frameworks (LangGraph, AutoGPT, CrewAI) operate at the **workflow execution** level — they help you write agent pipelines.
+
+ZEUS operates at the **system generation and governance** level:
+
+| Framework | Generates Systems? | Runtime Governance? | Lifecycle Management? | Contract Verification? |
+|-----------|-------------------|--------------------|--------------------|------------------------|
+| **ZEUS** | **Yes** | **Yes (ARES)** | **Yes** | **Yes** |
+| LangGraph | No | No | No | No |
+| AutoGPT | No | No | No | No |
+| CrewAI | No | No | No | No |
 
 The shift: from *"AI as a tool"* to *"AI as a system creator and controller."*
 
@@ -119,4 +133,5 @@ The shift: from *"AI as a tool"* to *"AI as a system creator and controller."*
 
 - Email: nickchen791@gmail.com
 - GitHub: [github.com/Nick-lll](https://github.com/Nick-lll)
+- LinkedIn: [linkedin.com/in/yuxue-chen](https://linkedin.com/in/yuxue-chen)
 - X: [@Nicksenlin](https://x.com/Nicksenlin)
